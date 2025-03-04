@@ -19,17 +19,21 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .tab {
+        .tabs {
             display: flex;
+            justify-content: space-between; 
+            margin-bottom: 10px; 
+        }
+        .tab {
             cursor: pointer;
             padding: 10px;
             background-color: #4CAF50; 
             color: white;
             border: none;
             border-radius: 5px;
-            margin: 0 5px;
             flex: 1;
             text-align: center;
+            margin: 0 5px; 
         }
         .tab-content {
             display: none;
@@ -69,22 +73,22 @@
         .social-links a:hover {
             color: #007BFF; 
         }
-        .bio-title, .education-title, .organization-title, .certification-title, .experience-title, .project-title, .certification-title {
+        .bio-title, .education-title, .organization-title, .certification-title, .experience-title, .project-title {
             font-size: 24px;
             font-weight: bold;
             margin-top: 30px;
             color: #4CAF50; 
         }
-        .bio-text, .education-text, .organization-text, .certification-text, .experience-text, .project-text, .certification-text {
+        .bio-text, .education-text, .organization-text, .certification-text, .experience-text, .project-text {
             font-size: 16px;
             line-height: 1.5;
             color: #555;
         }
-        .education-list, .organization-list, .certification-list, .experience-list, .project-list, .certification-list {
+        .education-list, .organization-list, .certification-list, .experience-list, .project-list {
             list-style-type: disc;
-            padding left: 20;
+            padding-left: 20px;
         }
-        .education-item, .organization-item, .certification-item, .experience-item, .project-item, .certification-item {
+        .education-item, .organization-item, .certification-item, .experience-item, .project-item {
             margin-bottom: 10px;
         }
         .contact-form {
@@ -101,7 +105,7 @@
             border-radius: 4px;
         }
         .contact-form button {
-            background-color: #4CAF50; 
+            background-color: #4CAF50; /* Hijau Muda */
             color: white;
             padding: 10px;
             border: none;
@@ -116,8 +120,11 @@
 <body>
 
 <div class="container">
-    <a href="index.html" class="tab">Profil</a>
-    <a href="kontak.html" class="tab">Kontak</a>
+    <div class="tabs">
+        <a href="index.html" class="tab active-tab">Profil</a>
+        <a href="resume.html" class="tab">Resume</a>
+        <a href="kontak.html" class="tab">Kontak</a>
+    </div>
 
     <div id="profile" class="tab-content active">
         <div class="profile-heading">Anggita Lila Normasari</div>
@@ -131,60 +138,10 @@
         
         <div class="bio-title">Tentang Saya</div>
         <div class="bio-text">
-            Saya seorang mahasiswa D4 Manajemen Informasi Kesehatan yang menyukai berbagai kegiatan dan hal-hal baru yang perlu di explore.
+            Saya seorang mahasiswa D4 Manajemen Informasi Kesehatan yang memiliki minat pada kodifikasi diagnosis maupun tindakan dan sistem pembiayaan kesehatan. Selain itu, saya juga menyukai berbagai kegiatan dan hal-hal baru yang menarik dan perlu di explore lebih jauh.
         </div>
-
-        <div class="education-title">Pendidikan</div>
-        <ul class="education-list">
-            <li class="education-item">D4 Manajemen Informasi Kesehatan, Universitas Gadjah Mada (2022 - Sekarang)</li>
-            <li class="education-item">SMA Negeri 1 Wonogiri, Jawa Tengah (2020 - 2022)</li>
-            <li class="education-item">SMP Negeri 1 Wonogiri, Jawa Tengah (2017 - 2019)</li>
-        </ul>
-
-        <div class="organization-title">Pengalaman Organisasi</div>
-        <ul class="organization-list">
-            <li class="organization-item">
-                <a href="https://drive.google.com/file/d/1Mt23uOvaqyZJq14lN0Y-OhJ-HAykdr4m/view?usp=drive_link" target="_blank">Ketua Umum KMD LIKES dan MRF SV UGM (2023 - 2024)</a>
-            </li>
-            <li class="organization-item">
-                <a href="https://drive.google.com/file/d/1MssE1d3pM76cbZ0YarngYwt0A0BEQFiV/view?usp=drive_link" target="_blank">Bendahara 2 Ikatan Mahasiswa Berprestasi Kab. Wonogiri (2022 - 2024)</a>
-            </li>
-            <li class="organization-item">
-                <a href="https://drive.google.com/file/d/1MtLPnWDs_nmdIqbSUEPXJ42qk_aHOYwp/view?usp=drive_link" target="_blank">Kepala Divisi Hukum, Politik, dan Pemerintahan Ikatan Mahasiswa Berprestasi Kab. Wonogiri (2025 - sekarang)</a>
-            </li>
-        </ul>
-
-        <div class="experience-title">Pengalaman Kerja</div>
-        <ul class="experience-list">
-            <li class="experience-item">PKL 1-2: RS PKU Muhammadiyah Gamping</li>
-            <li class="experience-item">PKL 3: Puskesmas Wates</li>
-            <li class="experience-item">PKL Komprehensif: BPJS Kesehatan Kabupaten Wonogiri</li>
-            <li class="experience-item">Asisten Praktikum Komunikasi Efektif</li>
-        </ul>
-
-        <div class="project-title">Proyek</div>
-        <ul class="project-list">
-            <li class="project-item">Project Day 1: ICD-10 Code Corrector Guna Menunjang Keakuratan Kode Diagnosis</li>
-            <li class="project-item">Project Day 2: Perencanaan Tata Ruang UKRM</li>
-            <li class="project-item">Project Day 3: Perancangan Desain Interface SIMRS</li>
-            <li class="project-item">Project Day 4: Perencanaan Desain Aplikasi IntelliCode</li>
-            <li class="project-item">Project Day 5: Desain Start-Up Zona Sehat</li>
-            <li class="project-item">PKM: StuntSense - Pengukur Panjang Tinggi Badan Berbasis Computer Vision
-                dan IoT Terintegrasi Sistem Pencatatan Monitoring Status Stunting Anak 0-60 Bulan</li>
-        </ul>
-        
-
-        <div class="certification-title">Sertifikat Penghargaan dan Kegiatan Lainnya</div>
-        <ul class="certification-list">
-            <li class="certification-item">Penghargaan bagi Pemuda Berprestasi Kabupaten Wonogiri 2022</li>
-            <li class="certification-item">Penghargaan bagi Pemuda Berprestasi Kabupaten Wonogiri 2023</li>
-            <li class="certification-item">Penghargaan bagi Pemuda Berprestasi Kabupaten Wonogiri 2024</li>
-            <li class="certification-item">Pemutakhiran Data Penyandang Disabilitas bersama Dinas Sosial Kabupaten Wonogiri</li>
-            <li class="certification-item">Verifikasi dan Validasi Data Kependudukan bersama Disdukcapil Kabupaten Wonogiri</li>
-          <li class="certification-item"> Dokumentasi Sertifikat dan Kegiatan lainnya dapat dilihat pada link berikut:
-             <a href="https://drive.google.com/drive/folders/1hVxEIGkRciN1rHVtCYrp7cdB8JCP4q36?usp=drive_link" target="_blank">Klik Disini!</a>
-        </li>
     </div>
-    </div>
+</div>
+
 </body>
 </html>
