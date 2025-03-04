@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Anggita Lila Normasari</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-between; /* Menyebar tab ke kiri dan kanan */
+            margin-bottom: 10px; /* Jarak antara tab dan konten */
+        }
+        .tab {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #4CAF50; /* Hijau Muda */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            flex: 1;
+            text-align: center;
+            margin: 0 5px; /* Jarak antar tab */
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .active {
+            display: block;
+        }
+        .active-tab {
+            background-color: #45a049; /* Warna hijau lebih gelap saat aktif */
+        }
+        .heading {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            color: #4CAF50; /* Hijau Muda */
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50; /* Hijau Muda */
+            display: flex;
+            align-items: center;
+        }
+        .section-title i {
+            margin-right: 10px; /* Jarak antara ikon dan teks */
+            color: #007BFF; /* Warna ikon */
+        }
+        .list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .list-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="tabs">
+            <a href="index.html" class="tab active-tab">Profil</a>
+            <a href="resume.html" class="tab">Resume</a> <!-- Tautan ke halaman Resume -->
+            <a href="kontak.html" class="tab">Kontak</a>
+        </div>
+
+<div class="container">
+    <div class="heading">Resume Anggita Lila Normasari</div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-graduation-cap"></i>Pendidikan</div>
+        <ul class="list education-list">
+            <li class="list-item">D4 Manajemen Informasi Kesehatan, Universitas Gadjah Mada (2022 - Sekarang)</li>
+            <li class="list-item">SMA Negeri 1 Wonogiri, Jawa Tengah (2020 - 2022)</li>
+            <li class="list-item">SMP Negeri 1 Wonogiri, Jawa Tengah (2017 - 2019)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-users"></i>Pengalaman Organisasi</div>
+        <ul class="list organization-list">
+            <li class="list-item">
+                <a href="https://drive.google.com/file/d/1Mt23uOvaqyZJq14lN0Y-OhJ-HAykdr4m/view?usp=drive_link" target="_blank">Ketua Umum KMD LIKES dan MRF SV UGM (2023 - 2024)</a>
+            </li>
+            <li class="list-item">
+                <a href="https://drive.google.com/file/d/1MssE1d3pM76cbZ0YarngYwt0A0BEQFiV/view?usp=drive_link" target="_blank">Bendahara 2 Ikatan Mahasiswa Berprestasi Kab. Wonogiri (2022 - 2024)</a>
+            </li>
+            <li class="list-item">
+                <a href="https://drive.google.com/file/d/1MtLPnWDs_nmdIqbSUEPXJ42qk_aHOYwp/view?usp=drive_link" target="_blank">Kepala Divisi Hukum, Politik, dan Pemerintahan Ikatan Mahasiswa Berprestasi Kab. Wonogiri (2025 - sekarang)</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-briefcase"></i>Pengalaman Kerja</div>
+        <ul class="list experience-list">
+            <li class="list-item">PKL 1-2: RS PKU Muhammadiyah Gamping</li>
+            <li class="list-item">PKL 3: Puskesmas Wates</li>
+            <li class="list-item">PKL Komprehensif: BPJS Kesehatan Kabupaten Wonogiri</li>
+            <li class="list-item">Asisten Praktikum Komunikasi Efektif</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-project-diagram"></i>Proyek</div>
+        <ul class="list project-list">
+            <li class="list-item">Project Day 1: ICD-10 Code Corrector Guna Menunjang Keakuratan Kode Diagnosis</li>
+            <li class="list-item">Project Day 2: Perencanaan Tata Ruang UKRM</li>
+            <li class="list-item">Project Day 3: Perancangan Desain Interface SIMRS</li>
+            <li class="list-item">Project Day 4: Perencanaan Desain Aplikasi IntelliCode</li>
+            <li class="list-item">Project Day 5: Desain Start-Up Zona Sehat</li>
+            <li class="list-item">PKM: StuntSense - Pengukur Panjang Tinggi Badan Berbasis Computer Vision dan IoT Terintegrasi Sistem Pencatatan Monitoring Status Stunting Anak 0-60 Bulan</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <div class="section-title"><i class="fas fa-trophy"></i>Sertifikat Penghargaan dan Kegiatan Lainnya</div>
+        <ul class="list certification-list">
+            <li class="list-item">Penghargaan bagi Pemuda Berprestasi Kabupaten Wonogiri 2022</li>
+            <li class="list-item">Penghargaan bagi Pemuda Berprestasi Kabupaten Wonogiri 2023</li>
+            <li class="list-item">Penghargaan bagi Pemuda Berprestasi Kabupaten Wonogiri 2024</li>
+            <li class="list-item">Pemutakhiran Data Penyandang Disabilitas bersama Dinas Sosial Kabupaten Wonogiri</li>
+            <li class="list-item">Verifikasi dan Validasi Data Kependudukan bersama Disdukcapil Kabupaten Wonogiri</li>
+            <li class="list-item">Dokumentasi Sertifikat dan Kegiatan lainnya dapat dilihat pada link berikut:
+                <a href="https://drive.google.com/drive/folders/1hVxEIGkRciN1rHVtCYrp7cdB8JCP4q36?usp=drive_link" target="_blank">Klik Disini!</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
