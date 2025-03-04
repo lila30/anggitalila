@@ -11,6 +11,25 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
+        .tab {
+            display: flex;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #4CAF50; /* Hijau Muda */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            flex: 1;
+            text-align: center;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
         .container {
             max-width: 800px;
             margin: auto;
@@ -52,7 +71,11 @@
     </style>
 </head>
 <body>
-
+    
+<div class="container">
+    <a href="index.html" class="tab">Profil</a>
+    <a href="kontak.html" class="tab">Kontak</a>
+    
 <div class="container">
     <div class="profile-heading">Kontak Hubung Anggita Lila Normasari</div>
     
@@ -69,10 +92,6 @@
         <button type="submit">Kirim</button>
     </form>
 </div>
-<div class="container">
-    <a href="index.html" class="tab">Profil</a>
-    <a href="kontak.html" class="tab">Kontak</a>
-    </div>
 
 </body>
 </html>
